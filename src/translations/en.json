@@ -1,0 +1,25 @@
+{
+  "loading": "Loading",
+
+  "Centers.header": "Centers",
+  "CenterList.name": "Name",
+  "CenterList.accountNumber": "Account #",
+  "CenterList.externalId": "External Id",
+  "CenterList.status": "Status",
+  "CenterList.office": "Office",
+
+  "Clients.header": "Clients",
+  "ClientList.name": "Name",
+  "ClientList.clientNumber": "Client #",
+  "ClientList.externalId": "External Id",
+  "ClientList.status": "Status",
+  "ClientList.office": "Office",
+  "ClientList.staff": "Staff",
+
+  "Groups.header": "Groups",
+  "GroupList.name": "Name",
+  "GroupList.accountNumber": "Account #",
+  "GroupList.externalId": "External Id",
+  "GroupList.status": "Status",
+  "GroupList.office": "Office"
+}

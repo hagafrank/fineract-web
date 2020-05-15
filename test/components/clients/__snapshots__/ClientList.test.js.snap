@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`clients list should be rendered 1`] = `
+<table
+  className="table"
+>
+  <thead>
+    <tr>
+      <th>
+        Name
+      </th>
+      <th>
+        Client #
+      </th>
+      <th>
+        External Id
+      </th>
+      <th>
+        Status
+      </th>
+      <th>
+        Office
+      </th>
+      <th>
+        Staff
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        IBANERA
+      </td>
+      <td>
+        excutive c000000123
+      </td>
+      <td>
+        243567896787
+      </td>
+      <td>
+        Active
+      </td>
+      <td>
+        Head Office
+      </td>
+      <td />
+    </tr>
+    <tr>
+      <td>
+        Robert Jakech
+      </td>
+      <td>
+        000000001
+      </td>
+      <td />
+      <td>
+        Active
+      </td>
+      <td>
+        Head Office
+      </td>
+      <td />
+    </tr>
+    <tr>
+      <td>
+        Moses Kaleña
+      </td>
+      <td>
+        000000002
+      </td>
+      <td />
+      <td>
+        Active
+      </td>
+      <td>
+        Head Office
+      </td>
+      <td />
+    </tr>
+    <tr>
+      <td>
+        Luis Espinoza
+      </td>
+      <td>
+        000000003
+      </td>
+      <td />
+      <td>
+        Active
+      </td>
+      <td>
+        Head Office
+      </td>
+      <td />
+    </tr>
+    <tr>
+      <td>
+        prueba
+      </td>
+      <td>
+        000000004
+      </td>
+      <td />
+      <td>
+        Active
+      </td>
+      <td>
+        Head Office
+      </td>
+      <td />
+    </tr>
+  </tbody>
+</table>
+`;

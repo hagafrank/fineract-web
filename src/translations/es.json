@@ -1,0 +1,13 @@
+{
+  "loading": "Cargando",
+  "Centers.header": "Centros",
+  "CenterList.name": "Nombre",
+  "CenterList.accountNumber": "Número de cuenta",
+  "CenterList.externalId": "ID externo",
+  "CenterList.status": "Estado",
+  "CenterList.office": "Oficina",
+
+  "Clients.header": "Clientes",
+
+  "Groups.header": "Grupos"
+}
