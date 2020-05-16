@@ -3,7 +3,13 @@
   "description": "Apache Fineract web client",
   "scripts": {
     "start": "webpack-dev-server --config webpack.config.dev.js --port 3000",
-    "test": "jest --watchAll"
+    "test": "jest --watchAll",
+    "test:ci": "jest",
+    "clean:build": "rimraf ./build && mkdir build",
+    "prebuild": "run-p clean:build test:ci",
+    "build": "webpack --config webpack.config.prod.js",
+    "postbuild": "run-p serve:build",
+    "serve:build": "http-server ./build"
   },
   "jest": {
     "setupFiles": [
@@ -46,6 +52,7 @@
     "eslint-plugin-react": "^7.19.0",
     "fetch-mock": "^9.4.0",
     "html-webpack-plugin": "^4.2.0",
+    "http-server": "0.9.0",
     "jest": "^26.0.1",
     "mini-css-extract-plugin": "^0.9.0",
     "node-fetch": "^2.6.0",
