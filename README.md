@@ -1,23 +1,37 @@
 # Fineract Web
 
-This is a web application built on top of Apache Fineract. It is a Single-Page App (SPA) written in web standard technologies like JavaScript, CSS and HTML5. It leverages common popular frameworks/libraries such as ReactJS, Redux and Bootstrap.
+This is a web application built on top of Apache Fineract. It is a Single-Page App (SPA) written in ReactJS, Redux, Bootstrap and other related technologies.
 
-## Get Started
+## Building in dev
 
-1. **Install [Node 8](https://nodejs.org)** or newer.
-2. **Navigate to this project's root directory on the command line.**
-3. **Install Node Packages.** - `npm install`
-4. **Install [React developer tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en) and [Redux Dev Tools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en)** in Chrome.
-5. Having issues? See below.
+1. Install [Node 8](https://nodejs.org) or newer.
+2. Navigate to this project's root directory on the command line.
+3. Install Node Packages. - `npm install`
+4. Update `process.env.API_URL` in webpack.config.dev.js with URL to your Apache Fineract instance.
+5. Start the app - `npm start`.
+6. Browse to http://localhost:3000
+7. Install [React developer tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en) and [Redux Dev Tools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en) in Chrome.
+8. To run the tests in watch mode - `npm test`
+9. Having issues? See below.
 
-## Having Issues? Try these things first:
+## Having Issues?:
 
 1. Run `npm install` - If you forget to do this, you'll get an error when you try to start the app later.
 2. Don't run the project from a symbolic link. It will cause issues with file watches.
-3. Delete any .eslintrc in your user directory and disable any ESLint plugin / custom rules within your editor since these will conflict with the ESLint rules defined in the course.
+3. Delete any .eslintrc in your user directory and disable any ESLint plugin / custom rules within your editor since these will conflict with the ESLint rules already defined in the codebase.
 4. On Windows? Open your console as an administrator. This will assure the console has the necessary rights to perform installs.
 5. Ensure you do not have NODE_ENV=production in your env variables as it will not install the devDependencies. To check run this on the command line: `set NODE_ENV`. If it comes back as production, you need to clear this env variable.
 6. Nothing above work? Delete your node_modules folder and re-run npm install.
+
+## Building for Production
+
+1. Install [Node 8](https://nodejs.org) or newer.
+2. Navigate to this project's root directory on the command line.
+3. Install Node Packages. - `npm install`
+4. Update `process.env.API_URL` in webpack.config.prod.js with URL to your Apache Fineract instance.
+5. Start the app - `npm run build`.
+6. Copy the contents of the _build_ folder to your web server's document root.
+7. Be sure to configure your web server to redirect all calls to index.html so that the routing is handled by ReactJS
 
 ### Production Dependencies
 
