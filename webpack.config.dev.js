@@ -12,37 +12,37 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "build"),
     publicPath: "/",
-    filename: "bundle.js",
+    filename: "bundle.js"
   },
   devServer: {
     stats: "minimal",
     overlay: true,
     historyApiFallback: true,
     disableHostCheck: true,
-    headers: { "Access-Control-Allow-Origin": "*" },
+    headers: { "Access-Control-Allow-Origin": "*" }
   },
   plugins: [
     new webpack.DefinePlugin({
       "process.env.API_URL": JSON.stringify(
-        "https://localhost:8443/fineract-provider/api/v1"
-      ),
+        "https://demo.mifos.io/fineract-provider/api/v1"
+      )
     }),
     new HtmlWebpackPlugin({
-      template: "src/index.html",
+      template: "src/index.html"
       //favicon: "src/favicon",
-    }),
+    })
   ],
   module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: ["babel-loader", "eslint-loader"],
+        use: ["babel-loader", "eslint-loader"]
       },
       {
         test: /(\.css)$/,
-        use: ["style-loader", "css-loader"],
-      },
-    ],
-  },
+        use: ["style-loader", "css-loader"]
+      }
+    ]
+  }
 };
