@@ -21,5 +21,9 @@
   "GroupList.accountNumber": "Account #",
   "GroupList.externalId": "External Id",
   "GroupList.status": "Status",
-  "GroupList.office": "Office"
+  "GroupList.office": "Office",
+
+  "Login.username": "Username",
+  "Login.password": "Password",
+  "Login.login": "Login"
 }

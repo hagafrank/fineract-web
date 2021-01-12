@@ -24,7 +24,7 @@ describe("Async Actions", () => {
 });
 
 describe("loadClientsSuccess", () => {
-  test("create LOAD_CLIENT action", () => {
+  test("create LOAD_CLIENTS action", () => {
     //arrange
     const expectedAction = {
       type: actions.LOAD_CLIENTS,
